@@ -12,10 +12,17 @@ export class HeaderComponent implements OnInit {
   public myStyleColor = 'brown';
   public myClass = 'red';
   public myColor = 'red';
+  public isShow = true;
   public user = {
     name : 'Daniyar',
     surname : 'Myrzakanov',
   };
+
+  public users = [
+    {name : 'Dan1'},
+    {name : 'Dan2'},
+    {name : 'Dan3'}
+  ];
 
   random() {
     return Math.random();

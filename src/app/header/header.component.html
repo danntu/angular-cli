@@ -33,5 +33,20 @@
   <!--Работа с элементами по ссылке<br>-->
   <!--<input type="text" #changeColorElement> <button (click)="changeColor(changeColorElement.value)"> Change Color</button>-->
 <!--</p>-->
+<button (click)="isShow = !isShow">Toogle!</button>
+<app-user-card [user2]="user" *ngIf="isShow"></app-user-card>
+<button (click)="isShow = false">Hide!</button>
 
-<app-user-card [user2]="user"></app-user-card>
+<ul>
+  <li *ngFor="let item1 of users">
+    {{item1.name}}
+  </li>
+</ul>
+
+<ul>
+  <li *ngFor="let item2 of [{name: 'danik1'},{name:'danik2'}]">
+    {{item2.name}}
+  </li>
+</ul>
+
+
