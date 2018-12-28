@@ -1,0 +1,37 @@
+<!--<p [class]="myClass">-->
+
+  <!--Вывод переменных в шаблон<br>-->
+  <!--Динамическое изменение свойств элементов<br>-->
+  <!--header works!<br/>-->
+  <!--x = {{x}}<br/>-->
+  <!--1+1 = {{1+1}}<br/>-->
+  <!--{{'Hello, '+user.name+'!'}}<br/>-->
+  <!--Hello, {{user.name}}!<br/>-->
+  <!--Username {{user.name}}<br/>-->
+  <!--Surname {{user.surname}}<br/>-->
+  <!--Random Number {{random()}}-->
+<!--</p>-->
+
+<!--<p [style.color]="myStyleColor">-->
+  <!--Brown-->
+<!--</p>-->
+
+<!--<p [style.width.px]="myWidth">-->
+  <!--{{myWidth}} px-->
+<!--</p>-->
+
+<!--<p>-->
+  <!--Обработка событий-->
+<!--</p>-->
+<!--<p (click)="changeColor('blue')" [style.color]="myColor">-->
+  <!--Click event to tag-->
+  <!--Press ctrl+enter <input type="text" (input)="changeColor($event.target.value)" (keydown.control.enter)="changeColor('green')">-->
+  <!--Press enter <input type="text" (input)="changeColor($event.target.value)" (keydown.enter)="changeColor('brown')">-->
+<!--</p>-->
+
+<!--<p>-->
+  <!--Работа с элементами по ссылке<br>-->
+  <!--<input type="text" #changeColorElement> <button (click)="changeColor(changeColorElement.value)"> Change Color</button>-->
+<!--</p>-->
+
+<app-user-card [user2]="user"></app-user-card>

@@ -19,6 +19,6 @@ import { UserCardComponent } from './header/user-card/user-card.component';
     BrowserModule
   ],
   providers: [],
-  bootstrap: [HeaderComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
