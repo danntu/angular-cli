@@ -13,15 +13,16 @@ export class HeaderComponent implements OnInit {
   public myClass = 'red';
   public myColor = 'red';
   public isShow = true;
+  public selectedUser;
   public user = {
     name : 'Daniyar',
     surname : 'Myrzakanov',
   };
 
   public users = [
-    {name : 'Dan1'},
-    {name : 'Dan2'},
-    {name : 'Dan3'}
+    {name : 'Данияр'},
+    {name : 'Естай'},
+    {name : 'Олжас'}
   ];
 
   random() {

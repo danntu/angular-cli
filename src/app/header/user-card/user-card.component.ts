@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-user-card',
@@ -8,13 +8,19 @@ import {Component, Input, OnInit} from '@angular/core';
 export class UserCardComponent implements OnInit {
 
   @Input() user2;
+  @Output() userSelected: EventEmitter<any> = new EventEmitter();
 
   constructor() {
-    // console.log('constructor:', this.user2);
+    console.log('constructor:', this.user2);
   }
 
   ngOnInit() {
-    // console.log('ngOnInit', this.user2);
+    console.log('ngOnInit', this.user2);
+  }
+
+
+  selectUser(){
+    this.userSelected.emit();
   }
 
 }
